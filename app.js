@@ -5,8 +5,7 @@ const os = require('os');
 const notes = require('./notes.js')
 
 
-const res = notes.add(15,12);
-console.log(res);
+console.log('Result is', notes.add(20,11));
 // let user = os.userInfo();
 //
 // fs.appendFileSync('greetings.txt', `Hello ${user.username}! You are ${notes.age}.`);
