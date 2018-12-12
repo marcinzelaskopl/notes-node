@@ -1,3 +1,8 @@
 console.log('Starting app');
+
 const fs = require('fs');
-fs.appendFileSync('greetings.txt', 'Hello world!');
+const os = require('os');
+
+let user = os.userInfo();
+
+fs.appendFileSync('greetings.txt', `Hello ${user.username}!`);
